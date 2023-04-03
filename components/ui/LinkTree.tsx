@@ -31,16 +31,10 @@ function LinkTree({
   social,
 }: Props) {
   return (
-    <div
-      class="flex flex-col justify-start items-center gap-10 bg-interactive p-10 h-screen overflow-y-hidden"
-      style={bgImage ? { background: `url(${bgImage})` } : undefined}
-    >
+    <div class="flex flex-col justify-start items-center gap-10 bg-interactive p-10 h-screen overflow-y-hidden">
       <header class="flex flex-col justify-center items-center gap-4">
-        <div class="rounded-full w-min bg-default p-4">
-          {avatar
-            ? <Image src={avatar} width={150} height={150} />
-            : <Icon id="Logo" size={150} />}
-        </div>
+        {avatar &&
+          <Image src={avatar} width={150} height={150} />}
         <Text tone="default-inverse" variant="heading-3">{title}</Text>
         <Text tone="default-inverse" variant="body">{description}</Text>
       </header>

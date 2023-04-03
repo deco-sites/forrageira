@@ -6,32 +6,8 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import { context } from "$live/live.ts";
 
-import * as $$$$0 from "./routes/api/[...catchall].tsx";
-import * as $$$$1 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/ShippingSimulation.tsx";
-import * as $$$$$1 from "./islands/HeaderButton.tsx";
-import * as $$$$$2 from "./islands/SendEventButton.tsx";
-import * as $$$$$3 from "./islands/HeaderSearchMenu.tsx";
-import * as $$$$$4 from "./islands/AddToCartButton.tsx";
-import * as $$$$$5 from "./islands/HeaderModals.tsx";
-import * as $$$$$6 from "./islands/SliderJS.tsx";
-import * as $$$$$7 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$8 from "./islands/ViewSendEvent.tsx";
-import * as $$$$$9 from "./islands/SearchControls.tsx";
-import * as $$$$$$$$0 from "deco-sites/fashion/sections/LinkTree.tsx";
-import * as $$$$$$$$1 from "deco-sites/fashion/sections/DesignSystem.story.tsx";
-import * as $$$$$$$$2 from "deco-sites/fashion/sections/Features.tsx";
-import * as $$$$$$$$3 from "deco-sites/fashion/sections/BannerPLP.tsx";
-import * as $$$$$$$$4 from "deco-sites/fashion/sections/BannerGrid.tsx";
-import * as $$$$$$$$5 from "deco-sites/fashion/sections/SearchResult.tsx";
-import * as $$$$$$$$6 from "deco-sites/fashion/sections/ProductShelf.tsx";
-import * as $$$$$$$$7 from "deco-sites/fashion/sections/Footer.tsx";
-import * as $$$$$$$$8 from "deco-sites/fashion/sections/CookieConsent.tsx";
-import * as $$$$$$$$9 from "deco-sites/fashion/sections/Header.tsx";
-import * as $$$$$$$$10 from "deco-sites/fashion/sections/ProductDetails.tsx";
-import * as $$$$$$$$11 from "deco-sites/fashion/sections/Highlights.tsx";
-import * as $$$$$$$$12 from "deco-sites/fashion/sections/WhatsApp.tsx";
-import * as $$$$$$$$13 from "deco-sites/fashion/sections/Carousel.tsx";
+import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$$$$$0 from "deco-sites/forrageira/sections/LinkTree.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -88,8 +64,7 @@ import * as i2$$$8 from "deco-sites/std/sections/SEOPDP.tsx";
 
 const manifest: DecoManifest = {
   "routes": {
-    "./routes/api/[...catchall].tsx": $$$$0,
-    "./routes/_app.tsx": $$$$1,
+    "./routes/_app.tsx": $$$$0,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/live/workbench.ts": $live_workbench,
     "./routes/live/editorData.ts": $live_editorData,
@@ -98,33 +73,8 @@ const manifest: DecoManifest = {
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/[...catchall].tsx": $live_catchall,
   },
-  "islands": {
-    "./islands/ShippingSimulation.tsx": $$$$$0,
-    "./islands/HeaderButton.tsx": $$$$$1,
-    "./islands/SendEventButton.tsx": $$$$$2,
-    "./islands/HeaderSearchMenu.tsx": $$$$$3,
-    "./islands/AddToCartButton.tsx": $$$$$4,
-    "./islands/HeaderModals.tsx": $$$$$5,
-    "./islands/SliderJS.tsx": $$$$$6,
-    "./islands/ProductImageZoom.tsx": $$$$$7,
-    "./islands/ViewSendEvent.tsx": $$$$$8,
-    "./islands/SearchControls.tsx": $$$$$9,
-  },
   "sections": {
-    "deco-sites/fashion/sections/LinkTree.tsx": $$$$$$$$0,
-    "deco-sites/fashion/sections/DesignSystem.story.tsx": $$$$$$$$1,
-    "deco-sites/fashion/sections/Features.tsx": $$$$$$$$2,
-    "deco-sites/fashion/sections/BannerPLP.tsx": $$$$$$$$3,
-    "deco-sites/fashion/sections/BannerGrid.tsx": $$$$$$$$4,
-    "deco-sites/fashion/sections/SearchResult.tsx": $$$$$$$$5,
-    "deco-sites/fashion/sections/ProductShelf.tsx": $$$$$$$$6,
-    "deco-sites/fashion/sections/Footer.tsx": $$$$$$$$7,
-    "deco-sites/fashion/sections/CookieConsent.tsx": $$$$$$$$8,
-    "deco-sites/fashion/sections/Header.tsx": $$$$$$$$9,
-    "deco-sites/fashion/sections/ProductDetails.tsx": $$$$$$$$10,
-    "deco-sites/fashion/sections/Highlights.tsx": $$$$$$$$11,
-    "deco-sites/fashion/sections/WhatsApp.tsx": $$$$$$$$12,
-    "deco-sites/fashion/sections/Carousel.tsx": $$$$$$$$13,
+    "deco-sites/forrageira/sections/LinkTree.tsx": $$$$$$$$0,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,
@@ -184,11 +134,12 @@ const manifest: DecoManifest = {
     "deco-sites/std/accounts/shopify.ts": i2$$3,
     "deco-sites/std/accounts/occ.ts": i2$$4,
   },
+  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };
 
-context.namespace = "deco-sites/fashion";
-context.siteId = 239;
+context.namespace = "deco-sites/forrageira";
+context.siteId = 791;
 
 export default manifest;
