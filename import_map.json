@@ -1,5 +1,6 @@
 {
   "imports": {
+    "deco-sites/forrageira/": "./",
     "$store/": "./",
     "$live/": "https://denopkg.com/deco-cx/live@1.0.0-rc.29/",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.0.0-rc.6/",
