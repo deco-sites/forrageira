@@ -4,10 +4,9 @@
 
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
-import { context } from "$live/live.ts";
 
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "deco-sites/forrageira/sections/LinkTree.tsx";
+import * as $$$$$$$$0 from "./sections/LinkTree.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -138,8 +137,5 @@ const manifest: DecoManifest = {
   "config": config,
   "baseUrl": import.meta.url,
 };
-
-context.namespace = "deco-sites/forrageira";
-context.siteId = 791;
 
 export default manifest;
