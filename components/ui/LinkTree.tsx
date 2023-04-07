@@ -31,12 +31,12 @@ function LinkTree({
   social,
 }: Props) {
   return (
-    <div class="flex flex-col justify-start items-center gap-10 bg-interactive p-10 h-screen overflow-y-hidden">
+    <div class="flex flex-col justify-start items-center gap-10 p-10 h-screen overflow-y-hidden">
       <header class="flex flex-col justify-center items-center gap-4">
         {avatar &&
           <Image src={avatar} width={150} height={150} />}
-        <Text tone="default-inverse" variant="heading-3">{title}</Text>
-        <Text tone="default-inverse" variant="body">{description}</Text>
+        <Text variant="heading-3">{title}</Text>
+        <Text variant="body">{description}</Text>
       </header>
       <main class="w-full max-w-[80%] sm:max-w-[50%]">
         <ul class="flex flex-col justify-center items-center gap-4">
@@ -44,7 +44,7 @@ function LinkTree({
             <li class="w-full">
               <a
                 href={link.href}
-                class="text-interactive-inverse text-caption rounded-3xl text-center w-full flex justify-center items-center min-h-[36px] hover:(bg-interactive-inverse text-interactive) border border-default"
+                class="text-caption rounded-3xl text-center w-full flex justify-center items-center min-h-[36px] hover:(bg-interactive-inverse text-interactive) border border-default"
               >
                 {link.label}
               </a>
@@ -58,7 +58,7 @@ function LinkTree({
             <li>
               <a
                 href={link.href}
-                class="text-interactive-inverse block rounded"
+                class="block rounded"
               >
                 <Icon id={link.label} size={36} strokeWidth={0.8} />
               </a>
