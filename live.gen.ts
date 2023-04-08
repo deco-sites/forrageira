@@ -6,7 +6,8 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/LinkTree.tsx";
+import * as $$$$$$$$0 from "./sections/YTFeed.tsx";
+import * as $$$$$$$$1 from "./sections/LinkTree.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -73,7 +74,8 @@ const manifest: DecoManifest = {
     "./routes/[...catchall].tsx": $live_catchall,
   },
   "sections": {
-    "deco-sites/forrageira/sections/LinkTree.tsx": $$$$$$$$0,
+    "deco-sites/forrageira/sections/YTFeed.tsx": $$$$$$$$0,
+    "deco-sites/forrageira/sections/LinkTree.tsx": $$$$$$$$1,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,

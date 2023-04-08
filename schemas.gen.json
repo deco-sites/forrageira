@@ -2107,6 +2107,45 @@
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g=@Video": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "title": "Video"
+    },
+    "ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g=@Video[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g=@Video"
+      }
+    },
+    "ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g=@FeedProps": {
+      "type": "object",
+      "properties": {
+        "videos": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g=@Video[]",
+          "title": "Videos"
+        }
+      },
+      "required": [
+        "videos"
+      ],
+      "title": "deco-sites/forrageira/sections/YTFeed.tsx@FeedProps"
+    },
     "ZGVjby1zaXRlcy9mb3JyYWdlaXJhL2NvbXBvbmVudHMvdWkvTGlua1RyZWUudHN4@Link": {
       "type": "object",
       "properties": {
@@ -3079,6 +3118,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g=": {
+      "title": "deco-sites/forrageira/sections/YTFeed.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g=@FeedProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/forrageira/sections/YTFeed.tsx"
+          ],
+          "default": "deco-sites/forrageira/sections/YTFeed.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL0xpbmtUcmVlLnRzeA==": {
       "title": "deco-sites/forrageira/sections/LinkTree.tsx",
       "type": "object",
@@ -3643,6 +3703,9 @@
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL1lURmVlZC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mb3JyYWdlaXJhL3NlY3Rpb25zL0xpbmtUcmVlLnRzeA=="
