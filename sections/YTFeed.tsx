@@ -9,7 +9,7 @@ export interface FeedProps {
 
 export default function YTFeed(props: FeedProps) {
   return (
-    <div>
+    <div class="grid h-screen place-items-center">
       {props.videos.map((video) => (
         <iframe
           width="560"
