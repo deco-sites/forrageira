@@ -9,7 +9,7 @@ export interface Link {
 }
 
 export interface Social {
-  label: "Instagram" | "Facebook";
+  label: "Instagram" | "Facebook" | "YouTube";
   href: string;
 }
 

@@ -2147,6 +2147,10 @@
             {
               "type": "string",
               "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "YouTube"
             }
           ],
           "type": "string",
