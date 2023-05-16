@@ -1,9 +1,0 @@
-{
-  "name": "Forrageira de Turing",
-  "short_name": "Forrageira de Turing",
-  "theme_color": "#8c3d3d",
-  "background_color": "#ffffff",
-  "display": "browser",
-  "scope": "/",
-  "start_url": "/"
-}
