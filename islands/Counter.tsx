@@ -3,7 +3,7 @@ import { Button } from "../components/Button.tsx";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
 try {
-  const result = await fetch("/abcde");
+  const result = await fetch("https://google.com/abcde");
   console.log(result);
 } catch (err) {
   console.log("fetch finished", err);
