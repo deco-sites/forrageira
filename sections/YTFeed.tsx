@@ -15,7 +15,7 @@ export default function YTFeed(props: FeedProps) {
       {props.videos.map((video, i) => (
         <div
           key={video.url}
-          class={`sm:w-1/${columns} w-full sm:${classes[i % columns]} px-4 sm:px-0 pb-4`}
+          class={`xl:w-1/${columns} w-full xl:${classes[i % columns]} px-4 xl:px-0 pb-4`}
         >
           <iframe
             width="100%"
