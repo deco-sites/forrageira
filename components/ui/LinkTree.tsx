@@ -29,7 +29,7 @@ function LinkTree({
   social,
 }: Props) {
   return (
-    <div class="flex flex-col justify-start items-center gap-2 p-10 overflow-y-hidden">
+    <div class="flex flex-col justify-start items-center gap-2 px-4 pb-4 overflow-y-hidden">
       <header class="flex flex-col justify-center items-center gap-4">
         {avatar &&
           <Image src={avatar} width={150} height={150} />}
