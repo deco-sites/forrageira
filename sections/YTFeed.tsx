@@ -8,19 +8,26 @@ export interface FeedProps {
 }
 
 export default function YTFeed(props: FeedProps) {
+  const columns = 3;
+  const classes = ["pl-4", "px-4", "pr-4"];
   return (
-    <div class="grid place-items-center">
-      {props.videos.map((video) => (
-        <iframe
-          width="560"
-          height="315"
-          src={video.url}
-          title={video.title ?? "YouTube video"}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
+    <div class="flex flex-wrap h-screen">
+      {props.videos.map((video, i) => (
+        <div
+          key={video.url}
+          class={`sm:w-1/${columns} w-full sm:${classes[i % columns]} px-4 sm:px-0 pb-4`}
         >
-        </iframe>
+          <iframe
+            width="100%"
+            height="100%"
+            src={video.url}
+            title={video.title ?? "YouTube video"}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          >
+          </iframe>
+        </div>
       ))}
     </div>
   );

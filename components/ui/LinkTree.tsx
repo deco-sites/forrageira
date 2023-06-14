@@ -17,13 +17,11 @@ export interface Props {
   title?: string;
   description?: string;
   links?: Link[];
-  bgImage?: LiveImage;
   avatar?: LiveImage;
   social?: Social[];
 }
 
 function LinkTree({
-  bgImage,
   avatar,
   title = "",
   description = "",
@@ -31,12 +29,12 @@ function LinkTree({
   social,
 }: Props) {
   return (
-    <div class="flex flex-col justify-start items-center gap-10 p-10 h-screen overflow-y-hidden">
+    <div class="flex flex-col justify-start items-center gap-2 p-10 overflow-y-hidden">
       <header class="flex flex-col justify-center items-center gap-4">
         {avatar &&
           <Image src={avatar} width={150} height={150} />}
         <Text variant="heading-3">{title}</Text>
-        <Text variant="body">{description}</Text>
+        <Text variant="body" class="text-justify">{description}</Text>
       </header>
       <main class="w-full max-w-[80%] sm:max-w-[50%]">
         <ul class="flex flex-col justify-center items-center gap-4">
@@ -52,8 +50,8 @@ function LinkTree({
           ))}
         </ul>
       </main>
-      <footer>
-        <ul class="flex flex-row gap-4">
+      <section>
+        <ul class="flex flex-row">
           {social?.map((link) => (
             <li>
               <a
@@ -65,7 +63,7 @@ function LinkTree({
             </li>
           ))}
         </ul>
-      </footer>
+      </section>
     </div>
   );
 }
