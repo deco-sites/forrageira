@@ -8336,19 +8336,19 @@
           ],
           "title": "City"
         },
+        "regionCode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Region Code"
+        },
         "country": {
           "type": [
             "string",
             "null"
           ],
           "title": "Country"
-        },
-        "postalCode": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Postal Code"
         }
       },
       "required": [],
