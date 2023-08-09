@@ -1,7 +1,6 @@
 {
   "imports": {
     "deco-sites/forrageira/": "./",
-    "$store/": "https://denopkg.com/deco-sites/fashion@ba2ab436d6ecda2b604b9001d33653e210158d76/",
     "$live/": "https://denopkg.com/deco-cx/deco@1.23.4/",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.17.0/",
     "partytown/": "https://deno.land/x/partytown@0.2.1/",
