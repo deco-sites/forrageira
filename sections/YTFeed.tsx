@@ -9,7 +9,10 @@ export interface FeedProps {
   videos: Video[];
   youtubeKey?: Secret;
 }
-
+export const loader = async (p: FeedProps) => {
+  console.log(await p.youtubeKey?.get());
+  return p;
+};
 export default function YTFeed(props: FeedProps) {
   const columns = 3;
   const classes = ["pl-4", "px-4", "pr-4"];
@@ -18,7 +21,9 @@ export default function YTFeed(props: FeedProps) {
       {props.videos.map((video, i) => (
         <div
           key={video.url}
-          class={`xl:w-1/${columns} w-full xl:${classes[i % columns]} px-4 xl:px-0 pb-4`}
+          class={`xl:w-1/${columns} w-full xl:${
+            classes[i % columns]
+          } px-4 xl:px-0 pb-4`}
         >
           <iframe
             width="100%"
