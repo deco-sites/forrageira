@@ -4,7 +4,9 @@
     "component": "deno eval 'import \"$live/scripts/component.ts\"'",
     "check": "deno fmt && deno lint && deno check dev.ts main.ts",
     "gen": "deno run -A dev.ts --gen-only",
-    "update": "deno eval 'import \"$live/scripts/update.ts\"'"
+    "update": "deno eval 'import \"$live/scripts/update.ts\"'",
+    "install": "deno eval 'import \"$live/scripts/apps/install.ts\"'",
+    "uninstall": "deno eval 'import \"$live/scripts/apps/uninstall.ts\"'"
   },
   "githooks": {
     "pre-commit": "check"

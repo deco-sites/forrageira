@@ -1,3 +1,5 @@
+import { Secret } from "$live/loaders/secret.ts";
+
 export interface Video {
   url: string;
   title?: string;
@@ -5,6 +7,7 @@ export interface Video {
 
 export interface FeedProps {
   videos: Video[];
+  youtubeKey?: Secret;
 }
 
 export default function YTFeed(props: FeedProps) {
