@@ -5,22 +5,22 @@
 
 import twindPlugin from "$fresh/plugins/twind.ts";
 import { start } from "$fresh/server.ts";
-import { $live } from "$live/mod.ts";
-import deco from "deco-sites/std/plugins/mod.ts";
+import decoPlugin from "$live/plugins/deco.ts";
+import twindConfig from "deco-sites/forrageira/twind.config.ts";
 import partytownPlugin from "partytown/mod.ts";
-import prefetchPlugin from "prefetch";
-import manifest from "./live.gen.ts";
-import site from "./site.json" assert { type: "json" };
-import twindConfig from "./twind.config.ts";
+import manifest from "./fresh.gen.ts";
+import decoManifest from "./manifest.gen.ts";
 
-await start($live(manifest, site), {
+await start(manifest, {
   plugins: [
-    ...deco(),
-    partytownPlugin(),
-    prefetchPlugin(),
+    decoPlugin({
+      manifest: decoManifest,
+      site: { namespace: "deco-sites/forrageira" },
+    }),
     twindPlugin({
       ...twindConfig,
       selfURL: new URL("./twind.config.ts", import.meta.url).href,
     }),
+    partytownPlugin(),
   ],
 });

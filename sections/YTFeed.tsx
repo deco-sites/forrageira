@@ -1,5 +1,3 @@
-import { Secret } from "$live/loaders/secret.ts";
-
 export interface Video {
   url: string;
   title?: string;
@@ -7,12 +5,7 @@ export interface Video {
 
 export interface FeedProps {
   videos: Video[];
-  youtubeKey?: Secret;
 }
-export const loader = async (p: FeedProps) => {
-  console.log(await p.youtubeKey?.get());
-  return p;
-};
 export default function YTFeed(props: FeedProps) {
   const columns = 3;
   const classes = ["pl-4", "px-4", "pr-4"];

@@ -32,7 +32,7 @@ function LinkTree({
     <div class="flex flex-col justify-start items-center gap-2 px-4 pb-4 overflow-y-hidden">
       <header class="flex flex-col justify-center items-center gap-4">
         {avatar &&
-          <Image src={avatar} width={150} height={150} />}
+          <img src={avatar} width={150} height={150} />}
         <Text variant="heading-3">{title}</Text>
         <Text variant="body" class="text-justify">{description}</Text>
       </header>
