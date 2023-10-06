@@ -1,8 +1,6 @@
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
 import Icon from "deco-sites/forrageira/components/ui/Icon.tsx";
 import Text from "deco-sites/forrageira/components/ui/Text.tsx";
-
 export interface Link {
   label: string;
   href: string;

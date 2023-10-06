@@ -15,7 +15,6 @@ await start(manifest, {
   plugins: [
     decoPlugin({
       manifest: decoManifest,
-      site: { namespace: "deco-sites/forrageira" },
     }),
     twindPlugin({
       ...twindConfig,
