@@ -2,7 +2,7 @@
   "imports": {
     "apps/": "https://denopkg.com/deco-cx/apps@b5ecf76be5eb9a1c12803e0163ba73b7a0a257a0/",
     "deco-sites/forrageira/": "./",
-    "$live/": "https://denopkg.com/deco-cx/deco@e33f2b2c2af02a74bb90eaf0d0a93d5970716e92/",
+    "$live/": "https://denopkg.com/deco-cx/deco@02d40bcbaed1e3b0e3b8663b946dd5d73ee64b7d/",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.22.11/",
     "partytown/": "https://deno.land/x/partytown@0.4.7/",
     "$fresh/": "https://deno.land/x/fresh@1.5.2/",
@@ -15,6 +15,6 @@
     "twind/": "https://esm.sh/v117/twind@0.16.17/",
     "std/": "https://deno.land/std@0.178.0/",
     "prefetch": "https://deno.land/x/prefetch@0.0.6/mod.ts",
-    "deco/": "https://denopkg.com/deco-cx/deco@e33f2b2c2af02a74bb90eaf0d0a93d5970716e92/"
+    "deco/": "https://denopkg.com/deco-cx/deco@02d40bcbaed1e3b0e3b8663b946dd5d73ee64b7d/"
   }
 }
