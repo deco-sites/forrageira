@@ -1260,6 +1260,8 @@
     "https://denopkg.com/deco-cx/deco@02d40bcbaed1e3b0e3b8663b946dd5d73ee64b7d/scripts/update.ts": "67bb235028bd0f25c3745bcc28cd9e3ebf3afdf8ca78bd978ea84e7132bd177a",
     "https://denopkg.com/deco-cx/deco@02d40bcbaed1e3b0e3b8663b946dd5d73ee64b7d/utils/json.ts": "11c5b73fed931e2a91c6ba476797750a98150530d5337e5609d687964756f046",
     "https://denopkg.com/deco-cx/deco@02d40bcbaed1e3b0e3b8663b946dd5d73ee64b7d/utils/update.ts": "2d82c309dec01253ad3dabde3fd86319b2813b1c349f315dff0cf40037d5b258",
+    "https://denopkg.com/deco-cx/deco@1.44.8/scripts/update.ts": "6056aa6071869565819d965016d02b741f0e4a3f4d1b761cb2acab6c2d7b0314",
+    "https://denopkg.com/deco-cx/deco@1.44.8/utils/json.ts": "11c5b73fed931e2a91c6ba476797750a98150530d5337e5609d687964756f046",
     "https://denopkg.com/deco-cx/deco@71ee6aa66a365a258cf74a1c0300d62a6678d722/scripts/update.ts": "6056aa6071869565819d965016d02b741f0e4a3f4d1b761cb2acab6c2d7b0314",
     "https://denopkg.com/deco-cx/deco@71ee6aa66a365a258cf74a1c0300d62a6678d722/utils/json.ts": "11c5b73fed931e2a91c6ba476797750a98150530d5337e5609d687964756f046",
     "https://denopkg.com/deco-cx/deno_ast_wasm@0.1.0/lib/deno_ast_wasm.generated.js": "ed9e7440e97bae5672ba8812b346eb341d3c9facbc650c58b0f97d5d65663661",
