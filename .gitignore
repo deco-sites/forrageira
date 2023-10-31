@@ -68,3 +68,5 @@ yarn-error.log
 
 dist/
 server/
+# Fresh build directory
+_fresh/
