@@ -3,6 +3,7 @@
     "start": "deno task bundle && DECO_SITE_NAME=forrageira deno run --unstable -A --watch=sections/,functions/ dev.ts",
     "component": "deno eval 'import \"$live/scripts/component.ts\"'",
     "check": "deno fmt && deno lint && deno check dev.ts main.ts",
+    "build": "deno run -A dev.ts build",
     "gen": "deno run -A dev.ts --gen-only",
     "update": "deno eval 'import \"$live/scripts/update.ts\"'",
     "install": "deno eval 'import \"$live/scripts/apps/install.ts\"'",
