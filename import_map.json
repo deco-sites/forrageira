@@ -1,6 +1,6 @@
 {
   "imports": {
-    "apps/": "https://denopkg.com/deco-cx/apps@0.34.6/",
+    "apps/": "https://denopkg.com/deco-cx/apps@f854a96448b56a0c031484b934d64cde73c88139/",
     "deco-sites/forrageira/": "./",
     "$live/": "https://denopkg.com/deco-cx/deco@1.57.0/",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.24.2/",
