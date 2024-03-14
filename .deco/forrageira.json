@@ -1,107 +1,40 @@
 {
-  "routes": {
-    "_middleware": {
-      "app": {
-        "__resolveType": "forrageira-test-app"
-      },
-      "state": [
-        {
-          "key": "configVTEX",
-          "value": {
-            "__resolveType": "configVTEX"
-          }
-        },
-        {
-          "key": "configVNDA",
-          "value": {
-            "__resolveType": "configVNDA"
-          }
-        },
-        {
-          "key": "configOCC",
-          "value": {
-            "__resolveType": "configOCC"
-          }
-        }
-      ],
-      "__resolveType": "$live/loaders/state.ts"
-    },
-    "[...catchall]": {
-      "audiences": [
-        {
-          "__resolveType": "everyone"
-        }
-      ],
-      "__resolveType": "$live/handlers/routesSelection.ts"
-    }
-  },
   "Friday-Campaign": {
     "cron": "* * * * FRI",
     "__resolveType": "$live/matchers/MatchCron.ts"
   },
-  "pipe_dream": {
-    "url": "https://ene801obxiwoa.x.pipedream.net",
-    "__resolveType": "deco-sites/forrageira/apps/mcandeia_bins.ts"
-  },
-  "forrageira-test-app": {
-    "apps": [],
-    "routes": [],
-    "redirects": [
-      {
-        "to": "/teste-redirect-2",
-        "from": "/teste-redirect",
-        "type": "temporary"
-      }
-    ],
-    "__resolveType": "deco-sites/forrageira/apps/deco.ts"
-  },
-  "ytfeed_with_key": {
-    "videos": [],
-    "youtubeKey": {
-      "encrypted": "1AB5221B19AA4C938DED808E0046B93B",
-      "__resolveType": "$live/loaders/secret.ts"
-    },
-    "__resolveType": "deco-sites/forrageira/sections/YTFeed.tsx"
-  },
-  "eva@v0": {
-    "url": "https://google.com",
-    "__resolveType": "deco-sites/forrageira/apps/eva.ts"
-  },
-  "forrageira@v0": {
-    "seo": {
-      "type": "website",
-      "title": "A Forrageira de Turing",
-      "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    "global": [],
-    "routes": [
-      {
-        "__resolveType": "website/loaders/pages.ts"
-      },
-      [
-        {
-          "handler": {
-            "value": {
-              "__resolveType": "website/handlers/sitemap.ts"
-            }
-          },
-          "pathTemplate": "/sitemap.xml"
-        }
-      ]
-    ],
-    "caching": {
-      "jitterSeconds": 5,
-      "maxAgeSeconds": 10
-    },
-    "__resolveType": "deco-sites/forrageira/apps/site.ts"
-  },
-  "pages-mentorship👩‍🏫🧑‍🏫👨‍🏫-81eda6ffeefb": {
-    "name": "Mentorship 👩‍🏫 🧑‍🏫 👨‍🏫",
-    "path": "/forrageira/mentors",
+  "NewHome": {
+    "name": "Home",
+    "path": "/",
     "sections": [
       {
+        "__resolveType": "deco-sites/forrageira/sections/LinkTree.tsx",
+        "links": [],
+        "title": "A Forrageira de Turing",
+        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/a025bb2e-5956-4e55-bd3c-3e2fb8b2b1fd",
+        "social": [
+          {
+            "href": "https://instagram.com/aforrageiradeturing",
+            "label": "Instagram"
+          },
+          {
+            "href": "https://youtube.com/@aforrageiradeturing",
+            "label": "YouTube"
+          }
+        ],
+        "description": "A Forrageira de Turing é um projeto sem fins lucrativos que tem como principal objetivo apresentar, desmistificar e explorar as carreiras em tecnologia. Aqui nós convidamos profissionais das mais diversas áreas que compõem o guarda-chuva desse vasto ramo para um papo descontraído sobre sua trajetória, desafios e oportunidades desde o início da sua caminhada. De professores, acadêmicos, graduandos, pós-graduandos e pesquisadores a técnicos, especialistas e profissionais em geral."
+      },
+      {
+        "__resolveType": "deco-sites/forrageira/sections/YTFeed.tsx",
         "videos": [
+          {
+            "id": "NO7ej8NjxWE",
+            "url": "https://www.youtube.com/embed/TnQjolrA4jI"
+          },
+          {
+            "id": "NO7ej8NjxWE",
+            "url": "https://www.youtube.com/embed/kGHB21dSitY"
+          },
           {
             "url": "https://www.youtube.com/embed/U94Ha0BxM_o"
           },
@@ -143,37 +76,69 @@
           "name": "MY_KEY",
           "encrypted": "a5049c241138de27382f71bd738f2743",
           "__resolveType": "website/loaders/secret.ts"
-        },
-        "__resolveType": "deco-sites/forrageira/sections/YTFeed.tsx"
+        }
       },
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/ee953aa2-a669-4f2b-890e-bb78361b50c0",
+        "__resolveType": "website/sections/Seo/Seo.tsx",
         "title": "A Forrageira de Turing",
+        "description": "A Forrageira de Turing Podcast",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/ee953aa2-a669-4f2b-890e-bb78361b50c0",
         "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/4a85787d-026e-4ccd-a862-6536324711e8",
         "canonical": "https://www.aforrageiradeturing.com",
-        "description": "A Forrageira de Turing Podcast",
-        "__resolveType": "website/sections/Seo/Seo.tsx",
         "titleTemplate": "%s | Forrageira"
-      },
-      {
-        "links": [],
-        "title": "A Forrageira de Turing",
-        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/a025bb2e-5956-4e55-bd3c-3e2fb8b2b1fd",
-        "social": [
-          {
-            "href": "https://instagram.com/aforrageiradeturing",
-            "label": "Instagram"
-          },
-          {
-            "href": "https://youtube.com/@aforrageiradeturing",
-            "label": "YouTube"
-          }
-        ],
-        "description": "A Forrageira de Turing é um projeto sem fins lucrativos que tem como principal objetivo apresentar, desmistificar e explorar as carreiras em tecnologia. Aqui nós convidamos profissionais das mais diversas áreas que compõem o guarda-chuva desse vasto ramo para um papo descontraído sobre sua trajetória, desafios e oportunidades desde o início da sua caminhada. De professores, acadêmicos, graduandos, pós-graduandos e pesquisadores a técnicos, especialistas e profissionais em geral.",
-        "__resolveType": "deco-sites/forrageira/sections/LinkTree.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "eva@v0": {
+    "url": "https://google.com",
+    "__resolveType": "deco-sites/forrageira/apps/eva.ts"
+  },
+  "forrageira-test-app": {
+    "apps": [],
+    "routes": [],
+    "redirects": [
+      {
+        "to": "/teste-redirect-2",
+        "from": "/teste-redirect",
+        "type": "temporary"
+      }
+    ],
+    "__resolveType": "deco-sites/forrageira/apps/deco.ts"
+  },
+  "forrageira@v0": {
+    "seo": {
+      "type": "website",
+      "title": "A Forrageira de Turing",
+      "titleTemplate": "%s | Deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    "global": [],
+    "routes": [
+      {
+        "__resolveType": "website/loaders/pages.ts"
+      },
+      [
+        {
+          "handler": {
+            "value": {
+              "__resolveType": "website/handlers/sitemap.ts"
+            }
+          },
+          "pathTemplate": "/sitemap.xml"
+        }
+      ]
+    ],
+    "caching": {
+      "jitterSeconds": 5,
+      "maxAgeSeconds": 10
+    },
+    "__resolveType": "deco-sites/forrageira/apps/site.ts"
+  },
+  "my-page-block": {
+    "name": "Home",
+    "sections": [],
+    "__resolveType": "$live/pages/LivePage.tsx"
   },
   "pages-mentorgt-eeb5ef12653b": {
     "name": "Mentor GT",
@@ -265,21 +230,12 @@
     ],
     "__resolveType": "website/pages/Page.tsx"
   },
-  "NewHome": {
-    "name": "Home",
-    "path": "/",
+  "pages-mentorship👩‍🏫🧑‍🏫👨‍🏫-81eda6ffeefb": {
+    "name": "Mentorship 👩‍🏫 🧑‍🏫 👨‍🏫",
+    "path": "/forrageira/mentors",
     "sections": [
       {
-        "__resolveType": "deco-sites/forrageira/sections/YTFeed.tsx",
         "videos": [
-          {
-            "id": "NO7ej8NjxWE",
-            "url": "https://www.youtube.com/embed/TnQjolrA4jI"
-          },
-          {
-            "id": "NO7ej8NjxWE",
-            "url": "https://www.youtube.com/embed/kGHB21dSitY"
-          },
           {
             "url": "https://www.youtube.com/embed/U94Ha0BxM_o"
           },
@@ -321,10 +277,19 @@
           "name": "MY_KEY",
           "encrypted": "a5049c241138de27382f71bd738f2743",
           "__resolveType": "website/loaders/secret.ts"
-        }
+        },
+        "__resolveType": "deco-sites/forrageira/sections/YTFeed.tsx"
       },
       {
-        "__resolveType": "deco-sites/forrageira/sections/LinkTree.tsx",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/ee953aa2-a669-4f2b-890e-bb78361b50c0",
+        "title": "A Forrageira de Turing",
+        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/4a85787d-026e-4ccd-a862-6536324711e8",
+        "canonical": "https://www.aforrageiradeturing.com",
+        "description": "A Forrageira de Turing Podcast",
+        "__resolveType": "website/sections/Seo/Seo.tsx",
+        "titleTemplate": "%s | Forrageira"
+      },
+      {
         "links": [],
         "title": "A Forrageira de Turing",
         "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/a025bb2e-5956-4e55-bd3c-3e2fb8b2b1fd",
@@ -338,23 +303,58 @@
             "label": "YouTube"
           }
         ],
-        "description": "A Forrageira de Turing é um projeto sem fins lucrativos que tem como principal objetivo apresentar, desmistificar e explorar as carreiras em tecnologia. Aqui nós convidamos profissionais das mais diversas áreas que compõem o guarda-chuva desse vasto ramo para um papo descontraído sobre sua trajetória, desafios e oportunidades desde o início da sua caminhada. De professores, acadêmicos, graduandos, pós-graduandos e pesquisadores a técnicos, especialistas e profissionais em geral."
-      },
-      {
-        "__resolveType": "website/sections/Seo/Seo.tsx",
-        "title": "A Forrageira de Turing",
-        "description": "A Forrageira de Turing Podcast",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/ee953aa2-a669-4f2b-890e-bb78361b50c0",
-        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/4a85787d-026e-4ccd-a862-6536324711e8",
-        "canonical": "https://www.aforrageiradeturing.com",
-        "titleTemplate": "%s | Forrageira"
+        "description": "A Forrageira de Turing é um projeto sem fins lucrativos que tem como principal objetivo apresentar, desmistificar e explorar as carreiras em tecnologia. Aqui nós convidamos profissionais das mais diversas áreas que compõem o guarda-chuva desse vasto ramo para um papo descontraído sobre sua trajetória, desafios e oportunidades desde o início da sua caminhada. De professores, acadêmicos, graduandos, pós-graduandos e pesquisadores a técnicos, especialistas e profissionais em geral.",
+        "__resolveType": "deco-sites/forrageira/sections/LinkTree.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
   },
-  "my-page-block": {
-    "name": "Home",
-    "sections": [],
-    "__resolveType": "$live/pages/LivePage.tsx"
+  "pipe_dream": {
+    "url": "https://ene801obxiwoa.x.pipedream.net",
+    "__resolveType": "deco-sites/forrageira/apps/mcandeia_bins.ts"
+  },
+  "routes": {
+    "[...catchall]": {
+      "audiences": [
+        {
+          "__resolveType": "everyone"
+        }
+      ],
+      "__resolveType": "$live/handlers/routesSelection.ts"
+    },
+    "_middleware": {
+      "app": {
+        "__resolveType": "forrageira-test-app"
+      },
+      "state": [
+        {
+          "key": "configVTEX",
+          "value": {
+            "__resolveType": "configVTEX"
+          }
+        },
+        {
+          "key": "configVNDA",
+          "value": {
+            "__resolveType": "configVNDA"
+          }
+        },
+        {
+          "key": "configOCC",
+          "value": {
+            "__resolveType": "configOCC"
+          }
+        }
+      ],
+      "__resolveType": "$live/loaders/state.ts"
+    }
+  },
+  "ytfeed_with_key": {
+    "videos": [],
+    "youtubeKey": {
+      "encrypted": "1AB5221B19AA4C938DED808E0046B93B",
+      "__resolveType": "$live/loaders/secret.ts"
+    },
+    "__resolveType": "deco-sites/forrageira/sections/YTFeed.tsx"
   }
 }
