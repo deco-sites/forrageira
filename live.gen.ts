@@ -13,13 +13,13 @@ const manifest = {
     "./routes/_app.tsx": $$$$0,
   },
   "sections": {
-    "deco-sites/forrageira/sections/LinkTree.tsx": $$$$$$$$1,
-    "deco-sites/forrageira/sections/YTFeed.tsx": $$$$$$$$0,
+    "site/sections/LinkTree.tsx": $$$$$$$$1,
+    "site/sections/YTFeed.tsx": $$$$$$$$0,
   },
   "apps": {
-    "deco-sites/forrageira/apps/eva.ts": $$$$$$$$$$$$$0,
+    "site/apps/eva.ts": $$$$$$$$$$$$$0,
   },
-  "name": "deco-sites/forrageira",
+  "name": "site",
   "islands": {},
   "baseUrl": import.meta.url,
 };
