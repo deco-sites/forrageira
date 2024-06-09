@@ -2,7 +2,7 @@
   "imports": {
     "apps/": "https://denopkg.com/deco-cx/apps@0.45.3/",
     "deco-sites/forrageira/": "./",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.71.10/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.72.0/",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.5/",
     "partytown/": "https://deno.land/x/partytown@0.4.8/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
@@ -15,7 +15,7 @@
     "twind/": "https://esm.sh/v117/twind@0.16.17/",
     "std/": "https://deno.land/std@0.178.0/",
     "prefetch": "https://deno.land/x/prefetch@0.0.6/mod.ts",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.57.12/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.72.0/",
     "https://deno.land/x/esbuild_deno_loader@0.8.5/mod.ts": "https://denopkg.com/lucacasonato/esbuild_deno_loader@8a565bbca112acdab8d9044927de4720648bb777/mod.ts"
   }
 }
