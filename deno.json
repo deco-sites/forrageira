@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "start": "deno task bundle && DECO_SITE_NAME=forrageira deno run --unstable -A --watch=sections/,functions/ dev.ts",
+    "start": "deno task bundle && deno run -A --env --config=deno.json $(deno eval 'console.log(import.meta.resolve(\"deco/hypervisor/main.ts\"))') --build-cmd 'deno task build' -- deno task dev",
     "component": "deno eval 'import \"$live/scripts/component.ts\"'",
     "check": "deno fmt && deno lint && deno check dev.ts main.ts",
     "build": "deno run -A dev.ts build",
@@ -8,24 +8,50 @@
     "update": "deno eval 'import \"$live/scripts/update.ts\"'",
     "install": "deno eval 'import \"$live/scripts/apps/install.ts\"'",
     "uninstall": "deno eval 'import \"$live/scripts/apps/uninstall.ts\"'",
-    "bundle": "deno eval 'import \"$live/scripts/apps/bundle.ts\"' deco-sites/forrageira"
+    "bundle": "deno eval 'import \"deco/scripts/apps/bundle.ts\"' site",
+    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
   },
   "githooks": {
     "pre-commit": "check"
   },
   "lint": {
     "files": {
-      "exclude": ["static/", "README.md"]
+      "exclude": [
+        "static/",
+        "README.md"
+      ]
     }
   },
   "fmt": {
     "files": {
-      "exclude": ["static/", "README.md"]
+      "exclude": [
+        "static/",
+        "README.md"
+      ]
     }
   },
   "importMap": "./import_map.json",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
+  },
+  "imports": {
+    "apps/": "https://denopkg.com/deco-cx/apps@0.40.0/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.65.6/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.1/",
+    "partytown/": "https://deno.land/x/partytown@0.4.8/",
+    "$fresh/": "https://deno.land/x/fresh@1.6.5/",
+    "preact": "https://esm.sh/preact@10.19.2",
+    "preact/": "https://esm.sh/preact@10.19.2/",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.2",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.1",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
+    "twind": "https://esm.sh/v117/twind@0.16.17",
+    "twind/": "https://esm.sh/v117/twind@0.16.17/",
+    "std/": "https://deno.land/std@0.178.0/",
+    "prefetch": "https://deno.land/x/prefetch@0.0.6/mod.ts",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.65.6/",
+    "https://deno.land/x/esbuild_deno_loader@0.8.5/mod.ts": "https://denopkg.com/lucacasonato/esbuild_deno_loader@8a565bbca112acdab8d9044927de4720648bb777/mod.ts",
+    "site/": "./"
   }
 }

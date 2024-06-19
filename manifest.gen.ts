@@ -8,13 +8,13 @@ import * as $$$$$$$1 from "./sections/YTFeed.tsx";
 
 const manifest = {
   "sections": {
-    "deco-sites/forrageira/sections/LinkTree.tsx": $$$$$$$0,
-    "deco-sites/forrageira/sections/YTFeed.tsx": $$$$$$$1,
+    "site/sections/LinkTree.tsx": $$$$$$$0,
+    "site/sections/YTFeed.tsx": $$$$$$$1,
   },
   "apps": {
-    "deco-sites/forrageira/apps/site.ts": $$$$$$$$$$$$0,
+    "site/apps/site.ts": $$$$$$$$$$$$0,
   },
-  "name": "deco-sites/forrageira",
+  "name": "site",
   "baseUrl": import.meta.url,
 };
 
