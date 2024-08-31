@@ -68,3 +68,14 @@ yarn-error.log
 
 dist/
 server/
+
+
+# Deco files
+_docker_deps.ts
+.metadata/*
+.deco/metadata/*
+
+.env
+
+# Deno files
+deno.*.tmp

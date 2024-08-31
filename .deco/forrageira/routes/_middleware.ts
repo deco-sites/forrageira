@@ -1,1 +1,0 @@
-{"app":{"__resolveType":"forrageira-test-app"},"state":[{"key":"configVTEX","value":{"__resolveType":"configVTEX"}},{"key":"configVNDA","value":{"__resolveType":"configVNDA"}},{"key":"configOCC","value":{"__resolveType":"configOCC"}}],"__resolveType":"$live/loaders/state.ts"}
