@@ -1,1 +1,120 @@
-{"name":"Home","path":"/","sections":[{"links":[],"title":"A Forrageira de Turing","avatar":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/a025bb2e-5956-4e55-bd3c-3e2fb8b2b1fd","social":[{"href":"https://instagram.com/aforrageiradeturing","label":"Instagram"},{"href":"https://youtube.com/@aforrageiradeturing","label":"YouTube"}],"description":"A Forrageira de Turing é um projeto sem fins lucrativos que tem como principal objetivo apresentar, desmistificar e explorar as carreiras em tecnologia. Aqui nós convidamos profissionais das mais diversas áreas que compõem o guarda-chuva desse vasto ramo para um papo descontraído sobre sua trajetória, desafios e oportunidades desde o início da sua caminhada. De professores, acadêmicos, graduandos, pós-graduandos e pesquisadores a técnicos, especialistas e profissionais em geral.","__resolveType":"site/sections/LinkTree.tsx"},{"videos":[{"id":"NO7ej8NjxWE","url":"https://www.youtube.com/embed/TnQjolrA4jI"},{"id":"NO7ej8NjxWE","url":"https://www.youtube.com/embed/kGHB21dSitY"},{"url":"https://www.youtube.com/embed/U94Ha0BxM_o"},{"url":"https://www.youtube.com/embed/pryxa5Trn_8"},{"url":"https://www.youtube.com/embed/5-wlUD-94FM"},{"url":"https://www.youtube.com/embed/t1wz0gzfCK4"},{"id":"NO7ej8NjxWE","url":"https://www.youtube.com/embed/Lgj7YH7s7Lo"},{"url":"https://www.youtube.com/embed/HST52PwBLkA"},{"url":"https://www.youtube.com/embed/kbBbv8wJAdU"},{"url":"https://www.youtube.com/embed/6sIMilUaaus"},{"url":"https://www.youtube.com/embed/bYDpnjqY9Jw"},{"id":"5EVM4zxuMu8","url":"https://www.youtube.com/embed/5EVM4zxuMu8"},{"id":"NO7ej8NjxWE","url":"https://www.youtube.com/embed/NO7ej8NjxWE"}],"youtubeKey":{"name":"MY_KEY","encrypted":"a5049c241138de27382f71bd738f2743","__resolveType":"website/loaders/secret.ts"},"__resolveType":"site/sections/YTFeed.tsx"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/ee953aa2-a669-4f2b-890e-bb78361b50c0","title":"A Forrageira de Turing","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/4a85787d-026e-4ccd-a862-6536324711e8","canonical":"https://www.aforrageiradeturing.com","description":"A Forrageira de Turing Podcast","__resolveType":"website/sections/Seo/Seo.tsx","titleTemplate":"%s | Forrageira"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "links": [],
+      "title": "A Forrageira de Turing",
+      "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/a025bb2e-5956-4e55-bd3c-3e2fb8b2b1fd",
+      "social": [
+        {
+          "href": "https://instagram.com/aforrageiradeturing",
+          "label": "Instagram"
+        },
+        {
+          "href": "https://youtube.com/@aforrageiradeturing",
+          "label": "YouTube"
+        }
+      ],
+      "description": "A Forrageira de Turing é um projeto sem fins lucrativos que tem como principal objetivo apresentar, desmistificar e explorar as carreiras em tecnologia. Aqui nós convidamos profissionais das mais diversas áreas que compõem o guarda-chuva desse vasto ramo para um papo descontraído sobre sua trajetória, desafios e oportunidades desde o início da sua caminhada. De professores, acadêmicos, graduandos, pós-graduandos e pesquisadores a técnicos, especialistas e profissionais em geral.",
+      "__resolveType": "site/sections/LinkTree.tsx"
+    },
+    {
+      "videos": [
+        {
+          "url": "https://www.youtube.com/embed/M65IFvthXvM",
+          "title": "#018 Itamar Rocha"
+        },
+        {
+          "url": "2Grk13FxAwk",
+          "title": "#017 Emerson Lucena"
+        },
+        {
+          "url": "7N_RrhGpwrc",
+          "title": "#016 Bruno Dias"
+        },
+        {
+          "url": "LYsSh6zxdsI",
+          "title": "#015 Ivyna Santino"
+        },
+        {
+          "url": "https://www.youtube.com/embed/vKdhafQqb1s",
+          "title": "#014 Emerson Bezerra"
+        },
+        {
+          "url": "https://www.youtube.com/embed/TnQjolrA4jI",
+          "title": "#013 Mayza Nunes",
+          "id": "NO7ej8NjxWE"
+        },
+        {
+          "url": "https://www.youtube.com/embed/kGHB21dSitY",
+          "title": "#012 Mayza Nunes",
+          "id": "NO7ej8NjxWE"
+        },
+        {
+          "url": "https://www.youtube.com/embed/U94Ha0BxM_o",
+          "title": "#011 Marcelo Siqueira"
+        },
+        {
+          "url": "https://www.youtube.com/embed/pryxa5Trn_8",
+          "title": "#010 Maria Luiza Aires"
+        },
+        {
+          "url": "https://www.youtube.com/embed/5-wlUD-94FM",
+          "title": "#009 Thaís Gaudêncio"
+        },
+        {
+          "url": "https://www.youtube.com/embed/t1wz0gzfCK4",
+          "title": "#008 Sofia Rocha"
+        },
+        {
+          "url": "https://www.youtube.com/embed/Lgj7YH7s7Lo",
+          "title": "#007 Marcella Siqueira",
+          "id": "NO7ej8NjxWE"
+        },
+        {
+          "url": "https://www.youtube.com/embed/HST52PwBLkA",
+          "title": "#007 Filipe Gomes"
+        },
+        {
+          "title": "#005 Rennale Gregório",
+          "url": "https://www.youtube.com/embed/kbBbv8wJAdU"
+        },
+        {
+          "title": "#004 Arthur Sampaio",
+          "url": "https://www.youtube.com/embed/6sIMilUaaus"
+        },
+        {
+          "title": "#003 Alice Sabino",
+          "url": "https://www.youtube.com/embed/bYDpnjqY9Jw"
+        },
+        {
+          "title": "#002 André Abrantes",
+          "url": "https://www.youtube.com/embed/5EVM4zxuMu8",
+          "id": "5EVM4zxuMu8"
+        },
+        {
+          "title": "#001 Iago Araújo",
+          "url": "https://www.youtube.com/embed/NO7ej8NjxWE",
+          "id": "NO7ej8NjxWE"
+        }
+      ],
+      "youtubeKey": {
+        "name": "MY_KEY",
+        "encrypted": "a5049c241138de27382f71bd738f2743",
+        "__resolveType": "website/loaders/secret.ts"
+      },
+      "__resolveType": "site/sections/YTFeed.tsx"
+    },
+    {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/ee953aa2-a669-4f2b-890e-bb78361b50c0",
+      "title": "A Forrageira de Turing",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/791/4a85787d-026e-4ccd-a862-6536324711e8",
+      "canonical": "https://www.aforrageiradeturing.com",
+      "description": "A Forrageira de Turing Podcast",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "titleTemplate": "%s | Forrageira"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

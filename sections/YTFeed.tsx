@@ -1,3 +1,6 @@
+/**
+ * @title {{{title}}}
+ */
 export interface Video {
   url: string;
   title?: string;
@@ -11,7 +14,7 @@ export default function YTFeed(props: FeedProps) {
   const classes = ["pl-4", "px-4", "pr-4"];
   return (
     <div class="flex flex-wrap h-screen">
-      {props.videos.map((video, i) => (
+      {props.videos?.map((video, i) => (
         <div
           key={video.url}
           class={`xl:w-1/${columns} w-full xl:${
@@ -21,7 +24,7 @@ export default function YTFeed(props: FeedProps) {
           <iframe
             width="100%"
             height="100%"
-            src={video.url}
+            src={video.url.startsWith("http") ? video.url : `https://www.youtube.com/embed/${video.url}`}
             title={video.title ?? "YouTube video"}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
