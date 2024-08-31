@@ -6,7 +6,7 @@
 import twindPlugin from "$fresh/plugins/twind.ts";
 import { start } from "$fresh/server.ts";
 import decoPlugin from "$live/plugins/deco.ts";
-import twindConfig from "deco-sites/forrageira/twind.config.ts";
+import twindConfig from "site/twind.config.ts";
 import partytownPlugin from "partytown/mod.ts";
 import manifest from "./fresh.gen.ts";
 import decoManifest from "./manifest.gen.ts";
