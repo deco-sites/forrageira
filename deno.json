@@ -1,4 +1,5 @@
 {
+  "lock": false,
   "imports": {
     "apps/": "https://denopkg.com/deco-cx/apps@0.56.18/",
     "$live/": "https://denopkg.com/deco-cx/deco@1.96.1/",
