@@ -1,0 +1,1 @@
+{"routes":[{"handler":{"value":{"page":{"__resolveType":"NewHome"},"__resolveType":"$live/handlers/fresh.ts"}},"pathTemplate":"/"}],"__resolveType":"$live/flags/everyone.ts"}
